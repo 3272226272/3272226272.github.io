@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>摇号界面</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			margin-top: 30px;
+		}
+
+		.container {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 600px;
+		}
+
+		p {
+			font-size: 24px;
+			margin: 20px 0;
+		}
+
+		button {
+			padding: 10px 20px;
+			border: none;
+			background-color: #f44336;
+			color: #fff;
+			cursor: pointer;
+			border-radius: 5px;
+			margin: 10px;
+			transition: all 0.3s;
+		}
+
+		button:hover {
+			background-color: #ff7043;
+		}
+
+		button:active,
+		button:focus {
+			background-color: #e53935;
+			outline: none;
+		}
+		
+		input[type=file] {
+            display: none;
+        }
+        
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: #2bd918;
+			color: #fff;
+			border-radius: 5px;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>摇号界面</h1>
+	<!--	<p>英文单词：</p>   -->
+		<p id="word">请先摇号</p>
+		<p id="meaning"></p>
+		<button onclick="shake()">摇号</button>
+		<button onclick="showMeaning()">显示中文含义</button>
+		<input type="file" id="fileInput" onchange="uploadWords()">
+		<label for="fileInput" class="custom-file-upload">上传单词文件</label>
+	</div>
+
+	<script>
+		var words = [];
+		var indexb = ""
+		fetch('words.txt')
+			.then(response => response.text())
+			.then(data => {
+				words = data.split('\n');
+			});
+
+		function shake() {
+			document.getElementById("word").innerText = "请等待...";
+			setTimeout(function() {
+				var index = Math.floor(Math.random() * words.length);
+				document.getElementById("word").innerText =  "英文单词：" + words[index].split(',')[0].trim();
+				indexb = words[index].split(',')[0].trim();
+				document.getElementById("meaning").innerText = "";
+			}, 1000);
+		}
+
+		function showMeaning() {
+			var word = document.getElementById("word").innerText;
+			if (word == "请先摇号") {
+				alert("请先摇号再显示中文含义");
+			} else {
+				document.getElementById("meaning").innerText = "";
+				for (var i = 0; i < words.length; i++) {
+					if (words[i].split(',')[0].trim() == indexb) {
+						document.getElementById("meaning").innerText = "单词中文：" + words[i].split(',')[1].trim();
+						break;
+					}
+				}
+			}
+		}
+		
+		function uploadWords() {
+            var fileInput = document.getElementById('fileInput');
+            var file = fileInput.files[0];
+
+            var reader = new FileReader();
+            reader.readAsText(file);
+
+            reader.onload = function(e) {
+                words = e.target.result.split('\n');
+                shake(); // refresh the displayed word
+            }
+        }
+	</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+apple,苹果
+banana,香蕉
+7orange,橙子1
+6orange,橙子2
+o5range,橙子3
+4orange,橙子4
+3orange,橙子5
+2orange,橙子6
+1orange,橙子7
+0orange,橙子8
