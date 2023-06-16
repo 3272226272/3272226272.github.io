@@ -1,10 +1,358 @@
-apple,苹果
-banana,香蕉
-7orange,橙子1
-6orange,橙子2
-o5range,橙子3
-4orange,橙子4
-3orange,橙子5
-2orange,橙子6
-1orange,橙子7
-0orange,橙子8
+digital,数字量
+analog,模拟量
+input,输入
+output,输出
+full,全部
+half,一半
+on,开机
+off,关机
+new,新的
+logic,逻辑
+control,控制
+computer,计算机
+close,闭合、关门
+open,打开
+alarm,报警
+long,长的
+short,短的
+binary,二进制
+decimal,十进制
+hexadecimal,十六进制
+octal,八进制
+false,假的
+true,真的
+arm,手臂
+leg,腿
+jog,点动
+current,电流
+circuit,电路
+compact,压缩的
+complete,完成、完整
+voltage电压
+interface,接口、界面
+sent,发送
+receive,接收
+hold,锁定
+select,选择
+step,步
+motion,运动、移动
+channel,通道、频道
+human,人类
+none,没有
+year,年
+season,季
+day,天
+week,周
+month,月
+hour,时
+minute,分
+second,秒
+power,电源、能量
+source,源头
+mode,模式
+made,制造
+first,第一
+low,低级的
+middle,中级的
+medium,中级的
+high,高级的
+law,规则、法律
+link,连接
+connect,连通上
+kill,杀死
+relay,继电器
+transistor,晶体管
+delay,延时
+wait,等待
+time,时间
+temperature,温度
+double,双倍的
+sign,符号、记号
+unsigned,无符号
+signal,标记
+port,端口
+switch,开关
+communication,通信
+data,数据
+datum,数据、资料
+swap,交换
+sink,下沉、漏型
+zero,零
+file,文件
+fire,火
+error,错误
+enable,使能
+function,功能
+charge,充电
+battery,电池
+change,改变
+exchange,兑换
+cable,电缆
+cancel,取消
+delete,删除
+escape,退出
+normal,中性的
+read,读取
+writ,写入
+memory,存储器
+edit,编辑
+view,视图
+language,语言
+help,帮助
+show,展示
+wireless,无线
+payload,有效载荷
+white,白色
+black,黑色
+yellow,黄色
+red,红色
+blue,蓝色
+green,绿色
+brown,棕色
+gray,灰色
+serial,串联
+servo,伺服
+nsert,插入
+tabulator,制表
+alternate,交替的
+direct,直接的
+common,公共的
+maximum,最大的
+minimum,最小的
+download,下载
+up,上
+down,下
+system,系统
+standard,标准
+count,计数
+Word,字
+byte,字节
+bool,布尔
+real,实数
+integer,整数
+string,字符串
+array,数组
+local,本地的
+right,右边
+left,左边
+lift,人生
+drive,驱动、驾驶
+manual,手动、手册
+install,安装
+uninstall,卸载
+robot,机器人
+machine,机器
+factory,工厂
+effective,有效的
+limit,极限
+industry,工业、产业
+replace,取代
+perform,执行、完成
+science,科学
+size,尺寸、尺码
+automatic,自动的
+tag,标签
+labeling,标签、标记
+axis,关节轴
+fixing,修理
+apply,申请
+joint,接头、关节
+position,安置、位置
+grip,夹紧
+pin,针
+finish,完成
+scope,范围
+resolution,分辨率
+velocity,速度
+milling,磨，制粉
+manipulation,操纵
+interacting,相互作用
+unload,卸货
+technology,技术、工艺
+vision,视力、显现
+workspace,工作空间
+parallelogram,平行四边形
+triangle,三角形
+square,正方形
+rectangle,长方形
+arc,圆弧
+welding,焊接
+optimized,最佳优化
+adjustment,调节
+ultimately,最后
+flange,法兰西
+confined,有限制的
+flexpendant,示教器
+actuator,执行机构
+forearm,前臂
+boom,吊杆
+wrist,手腕
+waist,腰部
+base,底部、基础
+module,模块
+start,开始、启动
+groove,凹槽
+calibration,校准、标定
+specification,规格、详述
+creative,创造性的
+integrate,集成化
+innovation,创新
+hardware,硬件
+humidity,湿度
+positive,正
+configuration,配置
+mechatronics,机电一体化
+display,显示器
+packaging,包装
+assembly,装配
+flexible,灵活的
+maintenance,维修
+artificial,人工的
+intelligent,智能的
+palletizing,码垛堆积
+security,安全
+smooth,光滑的
+performance,性能
+repeatability,可重复性
+reliability,可靠性
+wizard,向导、术士
+electronic,电子
+application,应用程序
+model,模型
+parameter,参数
+monitor,监听
+device,装置
+posture,姿势
+coordinate,并列的
+shaft,轴、箭杆
+fixture,固定装置
+horizontal,水平的
+rotate,旋转、循环
+circle,环形
+guide,引导
+customize,定制
+eliminate,消除
+fence,防护物
+dust,灰尘
+inverter,换流器
+multitasking,多任务的
+collaborative,合作的
+optimize,使优化
+acceleration,加速
+interference,干扰
+programming,规划、设计
+workstation,工作站
+volume,音量、容量
+negative,负
+wheel,车轮
+EtherNet,以太网
+motor,发动机、电动机
+autonomous,自治的
+script,脚本（程序）
+mechanical,机械的
+camera,摄像机
+systematic,系统的
+modular,模数化的
+forward,向前地
+reverse,反向的
+research,研究
+psychology,心理学
+equivalent,相等的
+segment,环节
+digitalisation,取样频率
+designer,设计师
+shape,形状
+inventor,发明家
+simulate,模仿
+profession,专业
+process,处理
+synergy,协同作用
+microprocessor,微处理器
+speed,速度
+stop,停止
+run,偏好
+address,地址
+Transmit,传送
+status,状态
+absolute,绝对的
+confirm,确认
+level,等级
+converter,转换器
+default,缺省
+flow,流量
+fuse,熔体
+definition,定义
+industry robot,工业机器人
+remote control,遥控
+three laws of robotics,机器人三原则
+mobile robot,移动机器人
+service robot,服务机器人
+educational robot,教育机器人
+collaborative robot,协作机器人
+robot system,机器人系统
+production line,生产线
+gantry robot,龙门机器人
+control system,控制系统
+end effector,末端执行器
+arc welding,电弧焊
+parallel robot,并联机器人
+spot welding,点焊
+pin joint,针接头
+continuous path,连续路径
+motion control,运动控制
+direct drive,直接驱动
+given point,给定点
+control scheme,控制方案
+degree of freedom,自由度
+maximum speed,最大速度
+nominal payload,额定负荷
+inverse kinematics,反向运动学
+path planning,路径规划
+forward dynamics,正向动力学
+control algorithm,控制算法
+computer numerical control,数字控制
+assembly robot,装配机器人
+upper arm,上臂
+vision technology,视觉技术
+automation technology,自动化技术
+energy consumption,能耗
+functional package,功能包
+cycle time,循环时间
+driving device,驱动装置
+internal sensor,内部传感器
+main computer,主计算机
+running program,运行程序
+automatic mode,自动模式
+drive unit,驱动单元
+integrated air supply,集成供气口
+position repeatability,重复定位精度
+degree of protection,防护等级
+axis movement,轴运动
+training platform,实训台
+factory automation,工厂自动化
+payload capacity,负载能力
+series-produced,量产的
+mains filter,电源滤波器
+drive power supply,驱动电源
+heat exchange,热交换器
+brake resistor,制动电阻
+software architecture,软件架构
+bus cable,总线电缆
+compressed air,压缩空气
+minimum cycle time,最短循环时间
+AC inverter drive,交流变频驱动
+electronic product,电气产品
+low power output,低功率输出
+multi-process system,多进程系统
+communication protocol,通信协议
+flash slot,闪存槽
+cable interference,电缆干扰
+servo control,伺服控制
+general automation,通用自动化
+robotic automation system,机器人自动化系统
+main mechanical,机械主体
+industry 4.0,工业4.0
+PC-base controller,基于PC的控制器
+working range,工作范围
+virtual simulation,虚拟仿真
+single arm robot,单臂机器人
